@@ -25,6 +25,7 @@ echo '<html lang="en">';
 	echo'</div>';
 	//script
 	include(APPPATH.'views/backend/layout/script.php');
+	include(APPPATH.'views/frontend/script/script_form_emis.php');
 echo '</body>';
 echo '</html>';
 

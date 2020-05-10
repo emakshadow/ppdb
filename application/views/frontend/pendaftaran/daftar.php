@@ -31,7 +31,7 @@ echo '<html lang="en">';
          <span id="nama_peserta_error" class="text-danger"></span>
          <!-- /.validation -->
         <div class="input-group mt-3">
-          <input type="text" class="form-control" name="nisn" id="nisn"  placeholder="NISN" maxlength="11" onkeypress='number_only(event)'>
+          <input type="text" class="form-control" name="nisn" id="nisn"  placeholder="NISN" maxlength="11" onkeypress='number_only(event)' pattern="\d+">
           <div class="input-group-append">
             <div class="input-group-text">
               <i class="fas fa-address-card"></i>
@@ -62,7 +62,7 @@ echo '<html lang="en">';
          <span id="asal_sekolah_error" class="text-danger"></span>
          <!-- /.validation -->
         <div class="input-group mt-3 ">
-          <input type="text" class="form-control" name="no_hp" placeholder="No Whatsapp" maxlength="13" onkeypress='number_only(event)'>
+          <input type="text" class="form-control" name="no_hp" placeholder="No Whatsapp" maxlength="13" onkeypress='number_only(event)' pattern="\d+">
           <div class="input-group-append">
             <div class="input-group-text">
               <i class="fab fa-whatsapp"></i>
@@ -74,7 +74,7 @@ echo '<html lang="en">';
          <!-- /.validation -->
         <div class="row">
           <div class="col mt-3">
-            <button type="submit" class="btn btn-primary btn-block">
+            <button type="submit" class="btn btn-primary btn-block" >
              <span id="loading"></span> <span id="text-register"></span>
             </button>
           </div>

@@ -1,6 +1,8 @@
 <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-   
+   <?php 
+foreach ($peserta as $nav) {
+?>
    <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
@@ -47,10 +49,8 @@
         <div class="info">
 
         
-          <a href="#" class="d-block"><?php 
-          $peserta = $this->session->userdata('peserta');
-          extract($peserta);
-          echo $nama_siswa ?></a>
+          <a href="#" class="d-block">
+         <?php echo $nav->nama_siswa ?></a>
         </div>
       </div>
 
@@ -60,18 +60,31 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item ">
-            <a href="#" class="nav-link active">
+            <a href="<?php echo base_url('Cpeserta/halaman_peserta')?>" class="nav-link ">
               <i class="nav-icon fas fa-user"></i>
               <p>
                 Profil Saya
               </p>
             </a>
           </li>
-          
+          <?php 
+          if($nav->id_status == '1'){
+          ?></a>
+           <li class="nav-item ">
+            <a href="<?php echo base_url('Cpeserta/halaman_form')?>" class="nav-link ">
+              <i class="nav-icon fas fa-id-card"></i>
+              <p>
+                Form Data Diri
+              </p>
+            </a>
+          </li>
+          <?php 
+          }?>
             </ul>
           </li>
         
         </ul>
+      <?php } ?>
       </nav>
       <!-- /.sidebar-menu -->
     </div>

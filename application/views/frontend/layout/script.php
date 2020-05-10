@@ -8,5 +8,9 @@
         <script src="<?php echo base_url()?>assets/frontend/assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="<?php echo base_url()?>assets/frontend/js/scripts.js"></script>
-
-     
+        </script>
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#modalpop').modal('show');
+    });
+</script>

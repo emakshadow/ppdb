@@ -5,9 +5,9 @@ class Mpendaftaran extends CI_Model {
 
   function jadwal ()
  {
- 	 	$this->db->select('*');
+ 	 	$this->db->select('*,aktifasi.id_jadwal as tampil');
 		$this->db->from('jadwal');
-		$this->db->where('status','1');
+		$this->db->join('aktifasi', 'aktifasi.id_jadwal = jadwal.id_jadwal');
 		$query = $this->db->get();
 		return $query->result();
  }

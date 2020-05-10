@@ -28,6 +28,7 @@ echo '<html lang="en">';
 
 	//script
 	include(APPPATH.'views/backend/layout/script.php');
+	include(APPPATH.'views/backend/script/script_dasbor.php');
 echo '</body>';
 echo '</html>';
 

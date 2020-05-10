@@ -8,7 +8,7 @@
                     <div class="col-lg-3">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="<?php echo base_url()?>/assets/frontend/assets/img/team/b.png" alt="" />
-                            <h4>JALUR REGULER</h4>
+                            <h4>JALUR AKADEMIK</h4>
                             <hr>
                            <a class="btn btn-info" data-toggle="collapse" href="#reguler" role="button" aria-expanded="false" aria-controls="reguler">
                             Lihat Persyaratan 
@@ -101,7 +101,7 @@
                     <div class="col-lg-3">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="<?php echo base_url()?>/assets/frontend/assets/img/team/d.png" alt="" />
-                            <h4>PERPINDAHAN ORANG TUA</h4>
+                            <h4>JALUR PPT</h4>
                             <hr>
                            <a class="btn btn-info" data-toggle="collapse" href="#ppt" role="button" aria-expanded="false" aria-controls="ppt">
                             Lihat Persyaratan 

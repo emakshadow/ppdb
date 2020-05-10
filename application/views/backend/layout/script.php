@@ -17,8 +17,6 @@
 <script src="<?php echo base_url()?>assets/backend/plugins/raphael/raphael.min.js"></script>
 <script src="<?php echo base_url()?>assets/backend/plugins/jquery-mapael/jquery.mapael.min.js"></script>
 <script src="<?php echo base_url()?>assets/backend/plugins/jquery-mapael/maps/usa_states.min.js"></script>
-<!-- ChartJS -->
-<script src="<?php echo base_url()?>assets/backend/plugins/chart.js/Chart.min.js"></script>
 
 <!-- PAGE SCRIPTS -->
 <script src="<?php echo base_url()?>assets/backend/dist/js/pages/dashboard2.js"></script>
@@ -33,6 +31,8 @@
 <script src="<?php echo base_url()?>assets/backend/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
 <script src="<?php echo base_url()?>assets/backend/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 
+<!-- Summernote -->
+<script src="<?php echo base_url()?>assets/backend/plugins/summernote/summernote-bs4.min.js"></script>
 <!--number only-->
 <script type="text/javascript">
 function number_only(evt) {
@@ -62,4 +62,11 @@ function number_only(evt) {
       "autoWidth": false,
     });
   });
+</script>
+
+<script>
+  $(function () {
+    //Add text editor
+    $('#compose-textarea').summernote()
+  })
 </script>

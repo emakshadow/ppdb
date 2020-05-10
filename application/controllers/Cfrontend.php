@@ -7,6 +7,8 @@ class Cfrontend extends CI_Controller {
 	public function welcome()
 	{
 		$data['title']				=	'PPDB MAN 2 BANDUNG';
+		$data['berita']				=	$this->Madmin->read_berita();
+		$data['informasi']				=	$this->Madmin->read_informasi();
 		$data['pendaftaran']		=	$this->Mpendaftaran->jadwal();
 		$this->load->view('frontend/app', $data);
 	}

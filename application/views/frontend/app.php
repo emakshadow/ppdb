@@ -1,7 +1,5 @@
 <?php
 
-$this->session->sess_destroy();
-
 echo '<!DOCTYPE html>';
 echo '<html lang="en">';
 
@@ -27,7 +25,7 @@ echo '<html lang="en">';
 	//footer
 	include(APPPATH.'views/frontend/layout/footer.php');
 	//modal
-	include(APPPATH.'views/frontend/layout/modal.php');
+	
 	//script
 	include(APPPATH.'views/frontend/layout/script.php');
 echo '</body>';
