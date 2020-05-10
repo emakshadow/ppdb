@@ -42,7 +42,7 @@ foreach ($peserta as $peserta) {
                   </li>
                 </ul>
                 
-                <?php if($peserta->id_asal_sekolah != '0' and $peserta->id_alamat != '0' and $peserta->id_jalur != '0' and $peserta->id_ortu != '0' ){ ?>
+                <?php if($peserta->id_asal_sekolah != '' and $peserta->id_alamat != '' and $peserta->id_jalur != '' and $peserta->id_ortu != '' ){ ?>
                 <a href="<?php echo base_url('Cpeserta/detail_peserta')?>" class="btn btn-primary btn-block"><b>Lihat Semua</b></a>
               <?php } ?>
               </div>

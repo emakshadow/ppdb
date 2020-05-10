@@ -60,7 +60,7 @@ include(APPPATH.'views/frontend/page_peserta/form-emis/pilih_jalur.php');
                   Form Asal Sekolah
                   </div>
                   <div class="timeline-footer">
-                    <?php if ($id_asal_sekolah != '0') {
+                    <?php if ($id_asal_sekolah != '') {
                       ?>
                       <a href="#" class="btn btn-secondary btn-sm disabled"><i class="fas fa-check"> </i> Selesai</a>
                       <?php } else{ ?>
@@ -137,7 +137,7 @@ include(APPPATH.'views/frontend/page_peserta/form-emis/pilih_jalur.php');
                     Setelah Mengisi Form, Tunggu Hasil Pengumuman Jalur Non Akademik (PRESTASI Dan KETM) Yang akan Diumumkan Sesuai Jadwal Yang Telah Ditentukan.
 
                     <?php } 
-                     if($peserta->id_asal_sekolah != '0' and $peserta->id_alamat != '0' and $peserta->id_jalur != '0' and $peserta->id_ortu != '0' ){ ?>
+                     if($peserta->id_asal_sekolah != '' and $peserta->id_alamat != '' and $peserta->id_jalur != '' and $peserta->id_ortu != '' ){ ?>
                      <a href="<?php echo base_url('Cpeserta/detail_peserta')?>" class="btn btn-primary col-md-12">LIHAT DETAIL DATA DIRI</a>
                       <?php } ?>
                   </div>
