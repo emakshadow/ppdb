@@ -16,7 +16,7 @@
                                 ><div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" style="height: 200px;margin-left: auto;margin-right: auto; width: 100%;" src="<?php echo base_url().'assets/backend/berita/'.$berita->file; ?>" alt=""
+                                <img class="img-fluid" style="width:100%; height: 100%; max-height: 200px; max-width:600px;" src="<?php echo base_url().'assets/backend/berita/'.$berita->file; ?>" alt=""
                             /></a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading"><?php echo $berita->judul ?></div>

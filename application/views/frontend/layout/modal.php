@@ -12,7 +12,7 @@
                                    
                                      <br>
                                     <img class="img-fluid d-block mx-auto" src="<?php echo base_url().'assets/backend/berita/'.$berita->file; ?>" alt="" />
-                                    <p><?php echo $berita->isi ?></p>
+                                    <p style="text-align : left;"><?php echo $berita->isi ?></p>
                                      <p class="item-intro text-muted"><?php echo $berita->tanggal ?></p>
                                 </div>
                             </div>
